@@ -10,6 +10,8 @@
 		AF7697981DB8BC14000A258E /* ListMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF76978E1DB8BC14000A258E /* ListMaker.framework */; };
 		AF76979D1DB8BC14000A258E /* ListMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76979C1DB8BC14000A258E /* ListMakerTests.swift */; };
 		AF76979F1DB8BC14000A258E /* ListMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7697911DB8BC14000A258E /* ListMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF7697A91DB8BC52000A258E /* Lister.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7697A81DB8BC52000A258E /* Lister.swift */; };
+		AF7697AA1DB8BCD1000A258E /* Lister.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7697A81DB8BC52000A258E /* Lister.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		AF7697971DB8BC14000A258E /* ListMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF76979C1DB8BC14000A258E /* ListMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMakerTests.swift; sourceTree = "<group>"; };
 		AF76979E1DB8BC14000A258E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7697A81DB8BC52000A258E /* Lister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lister.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 			children = (
 				AF7697911DB8BC14000A258E /* ListMaker.h */,
 				AF7697921DB8BC14000A258E /* Info.plist */,
+				AF7697A81DB8BC52000A258E /* Lister.swift */,
 			);
 			path = ListMaker;
 			sourceTree = "<group>";
@@ -148,6 +152,7 @@
 				TargetAttributes = {
 					AF76978D1DB8BC13000A258E = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					AF7697961DB8BC14000A258E = {
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7697A91DB8BC52000A258E /* Lister.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF76979D1DB8BC14000A258E /* ListMakerTests.swift in Sources */,
+				AF7697AA1DB8BCD1000A258E /* Lister.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +327,7 @@
 		AF7697A31DB8BC14000A258E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.coventry.todo.ListMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +347,7 @@
 		AF7697A41DB8BC14000A258E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +366,7 @@
 		AF7697A61DB8BC14000A258E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ListMakerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.coventry.todo.ListMakerTests;
@@ -367,6 +378,7 @@
 		AF7697A71DB8BC14000A258E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ListMakerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.coventry.todo.ListMakerTests;
